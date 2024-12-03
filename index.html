@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mess</title>
+</head>
+<body>
+    <div class="container" >
+        <label class="heading" > Calculator</label>
+        <div class="text"> 
+            <input type="text" name="number" id="display" value="" disabled >
+        </div>
+        <div class="grid-container ">
+
+            <button class="grid-item multiply"onClick="append('%')">%</button>
+            <button class="grid-item divide"onClick="clear1()">C</button>
+            <button class="grid-item1"onClick="clear1()">AC</button>
+            <button class="grid-item2"onClick="backspace('')">DEL</button>
+            
+           
+            <button class="grid-item plus"onClick="append('7')">7</button>
+            <button class="grid-item minus"onClick="append('8')">8</button>
+            <button class="grid-item multiply"onClick="append('9')">9</button>
+            <button class="grid-item divide"onClick="append('*')">*</button>
+        
+        
+            <button class="grid-item "onClick="append('4')">4</button>
+            <button class="grid-item "onClick="append('5')">5</button>
+            <button class="grid-item "onClick="append('6')">6</button>
+            <button class="grid-item "onClick="append('-')">-</button>
+        
+            <button class="grid-item " onClick="append('1')">1</button>
+            <button class="grid-item " onClick="append('2')">2</button>
+            <button class="grid-item " onClick="append('3')">3</button>
+            <button class="grid-item " onClick="append('+')">+</button>
+
+            <button class="grid-item "onClick="append('0')">0</button>
+            <button class="grid-item "onClick="append('.')">.</button>
+            <button class="grid-item equal" onClick="calculate()">=</button>
+            <button class="grid-item "onClick="append('/')">/</button>
+                        
+        </div>
+        
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<style>
+    body{
+        background-image: url(./sad.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container{
+        width:25%; 
+        background-color: rgb(103, 86, 62);
+        text-align: center;
+        margin-left: 35%;
+        margin-top: 5%;
+        border-radius: 15px;
+        height: 525px;
+        
+    }
+    label{
+        color: antiquewhite;
+        height: 50px;
+        width: 150%; 
+        font-size: xx-large; 
+        text-align: center;
+    }
+    .text{
+    margin-left: 5%;
+    width: 90%;
+    }
+    input{
+        background-color: aliceblue;
+        text-align: right;
+    }
+    .grid-container{
+        background-color: rgb(219, 195, 167);
+        width: 90%;
+        margin-left: 5%;
+        
+    }
+    button{
+        height: 60px;
+        width: 20%;
+        margin:2% ;
+        margin-bottom: 3%;
+        border-radius: 10px;
+    }
+    button:hover{
+        background-color: rgb(225, 211, 193);
+        
+    }
+    .grid-item1{
+        column-span: 2;
+    }
+    input{
+        margin-top: 3%;
+        height: 50px;
+        width: 95%;
+        margin-bottom: 6%;
+    }
+</style>
+
+<script src="cal.js" > </script>
